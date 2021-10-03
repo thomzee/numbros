@@ -4,6 +4,7 @@
 namespace Thomzee\Numbros;
 
 use Thomzee\Numbros\Exceptions\NumbrosException;
+use Thomzee\Numbros\Factory\NumbrosNumbers;
 use Thomzee\Numbros\Factory\NumbrosRoman;
 
 class NumbrosService
@@ -13,6 +14,9 @@ class NumbrosService
         switch ($type) {
             case 'roman' :
                 $factory = new NumbrosRoman();
+                break;
+            case 'number' :
+                $factory = new NumbrosNumbers();
                 break;
             default :
                 throw new NumbrosException("Type $type not found.");

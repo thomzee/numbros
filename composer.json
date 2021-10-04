@@ -9,10 +9,20 @@
             "email": "thomaskayu@gmail.com"
         }
     ],
-    "require": {},
+    "require": {
+        "php": ">=5.4",
+        "illuminate/support": "5.x|6.x|7.x|8.x"
+    },
     "autoload": {
         "psr-4": {
             "Thomzee\\Numbros\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Thomzee\\Numbros\\NumbrosServiceProvider"
+            ]
         }
     }
 }

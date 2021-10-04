@@ -7,8 +7,24 @@ Current available pattern is:
 Other patterns is under development ...
 
 ## Installation
-To be updated later after deployed to packagist ...
-
+1. Install via composer by running this code on command line inside Laravel project
+    ```shell
+    composer require thomzee/numbros
+    ```
+2. Add this line to your ```app.php``` file
+    ```php
+   'providers' => [
+        . . .
+       Thomzee\Numbros\NumbrosServiceProvider::class,
+   ]
+    ```
+3. Add the facade as well in the same file
+   ```php
+   'aliases' => [
+       . . .
+       'Laramap' => Thomzee\Numbros\Facades\Numbros::class,
+   ]
+   ```
 ## Usage
 #### Roman Pattern
 ```php

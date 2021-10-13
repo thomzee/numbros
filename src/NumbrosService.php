@@ -9,6 +9,16 @@ use Thomzee\Numbros\Factory\NumbrosRoman;
 
 class NumbrosService
 {
+    /**
+     * This function return number as number or roman
+     * @param $type
+     * @param $prefix
+     * @param $unique
+     * @param string $separator
+     * @param bool $uppercase
+     * @return string
+     * @throws NumbrosException
+     */
     public function generate($type, $prefix, $unique, $separator = '/', $uppercase = true)
     {
         switch ($type) {

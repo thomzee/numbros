@@ -5,11 +5,6 @@ namespace Thomzee\Numbros\Factory;
 
 class NumbrosRoman implements NumbrosInterface
 {
-    /**
-     * This function return number of date after convert to roman and separate
-     * @param $separator
-     * @return string
-     */
     public function generate($separator)
     {
         $now = date('Ymd');
@@ -27,7 +22,6 @@ class NumbrosRoman implements NumbrosInterface
     }
 
     /**
-     * This function return number to roman
      * @param $number
      * @return string
      */

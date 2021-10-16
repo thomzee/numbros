@@ -9,6 +9,17 @@ use Thomzee\Numbros\Factory\NumbrosRoman;
 
 class NumbrosService
 {
+    /**
+     * Generate invoice number
+     *
+     * @param  string  $type
+     * @param  string  $prefix
+     * @param  string  $unique
+     * @param  string  $separator
+     * @param  bool  $uppercase
+     * @return string
+     * @throws NumbrosException
+     */
     public function generate($type, $prefix, $unique, $separator = '/', $uppercase = true)
     {
         switch ($type) {

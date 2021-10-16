@@ -5,6 +5,12 @@ namespace Thomzee\Numbros\Factory;
 
 class NumbrosRoman implements NumbrosInterface
 {
+    /**
+     * Generate invoice number with Roman pattern
+     *
+     * @param  string  $separator
+     * @return string
+     */
     public function generate($separator)
     {
         $now = date('Ymd');
@@ -22,7 +28,9 @@ class NumbrosRoman implements NumbrosInterface
     }
 
     /**
-     * @param $number
+     * Convert given number to a Roman numeral
+     *
+     * @param  int  $number
      * @return string
      */
     protected function toRoman($number)
